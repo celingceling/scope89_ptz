@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="scope89_ptz">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.743E-05 -7.6867E-05 0.070751"
+        rpy="0 0 0" />
+      <mass
+        value="7.1454" />
+      <inertia
+        ixx="0.016067"
+        ixy="3.5871E-06"
+        ixz="-1.6004E-05"
+        iyy="0.016044"
+        iyz="-5.6174E-05"
+        izz="0.0070174" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Pan_Link">
+    <inertial>
+      <origin
+        xyz="-3.8379E-05 -0.00063641 0.057188"
+        rpy="0 0 0" />
+      <mass
+        value="4.2423" />
+      <inertia
+        ixx="0.0039013"
+        ixy="4.2852E-05"
+        ixz="6.5893E-07"
+        iyy="0.0046092"
+        iyz="1.0958E-05"
+        izz="0.0036112" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/Pan_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/Pan_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.14288"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Pan_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Tilt_Link">
+    <inertial>
+      <origin
+        xyz="-7.1877E-05 -0.0011918 -0.00010749"
+        rpy="0 0 0" />
+      <mass
+        value="2.2653" />
+      <inertia
+        ixx="0.0018095"
+        ixy="-1.5541E-05"
+        ixz="6.5889E-07"
+        iyy="0.0015529"
+        iyz="1.0959E-05"
+        izz="0.001431" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/Tilt_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://scope89_ptz/meshes/Tilt_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.079375"
+      rpy="0 0 0" />
+    <parent
+      link="Pan_Link" />
+    <child
+      link="Tilt_Link" />
+    <axis
+      xyz="-0.99819 0.060204 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
