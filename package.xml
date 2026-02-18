@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>hanford_arm_moveit_config</name>
+  <name>scope89_ptz</name>
   <version>0.3.0</version>
   <description>
     <p>URDF Description package for scope89_ptz</p>
@@ -12,6 +12,7 @@ for scope89_ptz robot</p>
   <maintainer email="celing.li@inl.gov" />
   <license>BSD</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
+
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>
   <exec_depend>moveit_planners</exec_depend>
@@ -30,7 +31,6 @@ for scope89_ptz robot</p>
   <exec_depend>moveit_ros_visualization</exec_depend>
   <exec_depend>moveit_ros_warehouse</exec_depend>
   <exec_depend>moveit_setup_assistant</exec_depend>
-  <exec_depend>hanford_wire_manipulator_with_camera_description</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>rviz_common</exec_depend>
