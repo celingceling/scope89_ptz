@@ -12,3 +12,19 @@ foreach(dir config launch meshes urdf)
 	install(DIRECTORY ${dir}/
 		DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
 endforeach(dir)
+
+# Install launch files
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
+
+# Install config files
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME})
+
+# Install urdf files
+install(DIRECTORY urdf
+  DESTINATION share/${PROJECT_NAME})
+
+# Install mesh files
+install(DIRECTORY meshes
+  DESTINATION share/${PROJECT_NAME})

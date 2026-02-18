@@ -1,0 +1,20 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    ptz_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    ptz_joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+ptz_controller:
+  ros__parameters:
+    joints:
+      - J1
+      - J2
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
