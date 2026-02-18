@@ -97,10 +97,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-3.1415"
+      upper="3.1415"
+      effort="10"
+      velocity="1.0" />
   </joint>
   <link
     name="Tilt_Link">
@@ -155,9 +155,9 @@
     <axis
       xyz="-0.99819 0.060204 0" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-2.443"
+      upper="2.443"
+      effort="10"
+      velocity="1.0" />
   </joint>
 </robot>
