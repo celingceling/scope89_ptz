@@ -12,11 +12,6 @@ for scope89_ptz robot</p>
   <maintainer email="celing.li@inl.gov" />
   <license>BSD</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>roslaunch</depend>
-  <depend>robot_state_publisher</depend>
-  <depend>rviz</depend>
-  <depend>joint_state_publisher_gui</depend>
-  <depend>gazebo</depend>
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>
   <exec_depend>moveit_planners</exec_depend>
